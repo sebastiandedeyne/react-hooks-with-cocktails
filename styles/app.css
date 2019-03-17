@@ -1,0 +1,13 @@
+@tailwind base;
+
+body {
+  background: url("/static/background.svg");
+  background-size: 160px auto;
+  border: 1rem solid white;
+}
+
+.cocktail:not(:last-child) {
+  @apply border-b border-paper;
+}
+
+@tailwind utilities;
