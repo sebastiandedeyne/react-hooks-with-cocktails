@@ -7,7 +7,7 @@ body {
 }
 
 .cocktail:not(:last-child) {
-  @apply border-b border-paper;
+  @apply border-b;
 }
 
 @tailwind utilities;

@@ -4,7 +4,7 @@ export default function Search({ value, onChange }) {
       <span className="mr-4">Find</span>
       <input
         type="search"
-        className="flex-1 py-1 italic mt-2px border-b border-paper focus:outline-none"
+        className="flex-1 py-1 italic mt-2px border-b focus:outline-none"
         value={value}
         onChange={e => onChange(e.target.value)}
         autoFocus
