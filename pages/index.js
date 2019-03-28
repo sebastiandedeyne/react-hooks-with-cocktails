@@ -6,6 +6,10 @@ export default function Index() {
   const [cocktails, setCocktails] = useState([]);
 
   useEffect(() => {
+    document.title = "Welcome to hooks & cocktails!";
+  }, []);
+
+  useEffect(() => {
     if (search === "") {
       setCocktails([]);
 

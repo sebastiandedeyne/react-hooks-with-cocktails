@@ -1,13 +1,8 @@
 import "../styles/app.css";
 
-import Head from "next/head";
-
 export default function Layout({ children }) {
   return (
     <>
-      <Head>
-        <title>Hooks & Cocktails</title>
-      </Head>
       <div
         className="max-w-lg mx-auto bg-white px-12"
         style={{ minHeight: "calc(100vh - 2rem)" }}
