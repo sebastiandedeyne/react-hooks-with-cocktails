@@ -16,7 +16,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i"
           />
         </Head>
-        <body className="leading-normal font-serif text-black min-h-screen">
+        <body className="leading-normal font-sans text-black min-h-screen">
           <Main />
           <NextScript />
         </body>

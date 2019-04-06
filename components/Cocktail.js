@@ -8,7 +8,7 @@ export default function Cocktail(props) {
 
   return (
     <article className="cocktail py-8">
-      <h2 className="font-sans font-bold text-brown uppercase tracking-widest mb-2">
+      <h2 className="font-cocktail font-bold text-brown uppercase tracking-widest mb-2">
         {props.strDrink}
       </h2>
       <ul className="mb-2">

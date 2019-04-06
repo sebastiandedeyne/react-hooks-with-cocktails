@@ -10,4 +10,16 @@ body {
   @apply border-b;
 }
 
+.input {
+  @apply py-1 italic border-b;
+}
+
+.input:focus {
+  @apply outline-none;
+}
+
+.slide {
+  min-height: calc(100vh - 2rem);
+}
+
 @tailwind utilities;

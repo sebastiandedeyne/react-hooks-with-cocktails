@@ -1,35 +1,19 @@
-import { useEffect, useState } from "react";
-import { Cocktail, Layout, Search } from "../components";
+import cocktails from "../data/cocktails";
+
+import { CocktailsPage, Cocktail, Search } from "../components";
 
 export default function Index() {
-  const [search, setSearch] = useState("margarita");
-  const [cocktails, setCocktails] = useState([]);
-
-  useEffect(() => {
-    document.title = "Welcome to hooks & cocktails!";
-  }, []);
-
-  useEffect(() => {
-    if (search === "") {
-      setCocktails([]);
-
-      return;
-    }
-
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
-      .then(res => res.json())
-      .then(res => setCocktails(res.drinks || []));
-  }, [search]);
+  const search = "margherita";
 
   return (
-    <Layout>
-      <Search value={search} onChange={setSearch} />
+    <CocktailsPage>
+      <Search value={search} />
       {cocktails.map(cocktail => (
         <Cocktail key={cocktail.idDrink} {...cocktail} />
       ))}
       {search.length && !cocktails.length ? (
         <p className="italic">No results</p>
       ) : null}
-    </Layout>
+    </CocktailsPage>
   );
 }
