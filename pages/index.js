@@ -3,7 +3,7 @@ import cocktails from "../data/cocktails";
 import { CocktailsPage, Cocktail, Search } from "../components";
 
 export default function Index() {
-  const search = "margherita";
+  const search = "margarita";
 
   // Make `search` stateful
 
