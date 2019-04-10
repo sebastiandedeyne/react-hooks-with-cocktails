@@ -4,9 +4,7 @@ export default function() {
   return (
     <Slide title="Hello! 🍸" next="/2">
       <p className="mb-6">I'm Sebastian De Deyne.</p>
-      <p className="mb-6">
-        Front end developer and designer <br /> at Spatie.
-      </p>
+      <p className="mb-6">Front end developer and designer at Spatie.</p>
       <p className="mb-6">
         We're going to talk about{" "}
         <a href="https://reactjs.org" target="_blank" className="text-blue-500">
