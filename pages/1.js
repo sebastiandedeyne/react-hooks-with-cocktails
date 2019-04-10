@@ -18,8 +18,10 @@ export default function() {
         React fundamentals <br />
         How to use basic React hooks <br />
         How to use compose custom hooks <br />
-        <span class="text-gray-500 line-through">Hooks internals</span> <br />
-        <span class="text-gray-500 line-through">Advanced hooks</span> <br />
+        <span className="text-gray-500 line-through">Hooks internals</span>{" "}
+        <br />
+        <span className="text-gray-500 line-through">Advanced hooks</span>{" "}
+        <br />
       </p>
     </Slide>
   );
