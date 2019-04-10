@@ -12,6 +12,8 @@ export default function Index() {
   // Use thecockataildb.com to search
   // https://www.thecocktaildb.com/api/json/v1/1/search.php?s=
 
+  // Extract to a custom hook
+
   return (
     <CocktailsPage>
       <Search value={search} />

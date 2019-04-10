@@ -11,21 +11,18 @@ import Slide from "../components/Slide";
 //   });
 // }
 
-// {
-//   <button
-//     className="button"
-//     onClick={() => {
-//       /* doSomething() */
-//     }}
-//   >
-//     Click me!
-//   </button>;
-// }
-
 export default function() {
   return (
     <Slide title="Declarative" next="/3">
       <p>“What” instead of “How”</p>
+      <button
+        className="button bg-gray-200 px-3 py-3 rounded mt-4"
+        onClick={() => {
+          alert("Hi!");
+        }}
+      >
+        Click me!
+      </button>
     </Slide>
   );
 }

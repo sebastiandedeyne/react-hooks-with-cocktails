@@ -3,11 +3,13 @@ import Slide from "../components/Slide";
 export default function() {
   return (
     <Slide title="f(Props) => Node[]" next="/">
-      <p className="mb-2">React transforms props to a tree of nodes.</p>
-      <p className="text-sm mb-12">
-        (ReactDOM renders a node tree in the browser)
+      <p className="mb-2">
+        React transforms props to a tree of nodes. ReactDOM renders those nodes
+        in the browser.
       </p>
+      <p className="mb-12">Declarative means predictable.</p>
       <TextInput name="name" label="Name" value="" />
+      <p className="mt-8">Hello, ... !</p>
     </Slide>
   );
 }
