@@ -12,15 +12,17 @@ export default function() {
         </a>
         .
       </p>
-      <p>
-        React fundamentals <br />
-        How to use basic React hooks <br />
-        How to use compose custom hooks <br />
-        <span className="text-gray-500 line-through">Hooks internals</span>{" "}
-        <br />
-        <span className="text-gray-500 line-through">Advanced hooks</span>{" "}
-        <br />
-      </p>
+      <ul className="list-disc list-inside">
+        <li>React fundamentals </li>
+        <li>How to use basic React hooks </li>
+        <li>How to use compose custom hooks </li>
+        <li>
+          <span className="text-gray-500 line-through">Hooks internals</span>
+        </li>
+        <li>
+          <span className="text-gray-500 line-through">Advanced hooks</span>
+        </li>
+      </ul>
     </Slide>
   );
 }
